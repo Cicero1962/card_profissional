@@ -1,0 +1,165 @@
+.experience{
+   display: flex;
+   gap: 100px;
+   width: 100%;
+   max-width: 1250px;
+   margin: 0 auto;
+   padding-bottom: 60px;
+   padding-top: 60px;
+}
+
+.professional_experience{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    gap: 100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.subtitulo{
+    max-width: 3ch;
+    font-size: 8rem;
+    word-break: break-all;
+    text-transform: uppercase;
+    color: rgb(219, 219, 219);
+    line-height: 1;
+}
+
+.text_bold{
+    font-weight: 600;
+}
+
+.projeto_bikcraft{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+}
+
+.projeto_bikcraft p{
+    font-weight: 300;
+    color: black;
+}
+
+.number{
+    position: absolute;
+    left: -70px;
+    top: 2px;
+    transform: translate(-50% -50%);
+}
+
+.number_even{
+    left: -90px;
+}
+
+.projeto_bikcraft p{
+    max-width: 48ch;
+    font-size: 0.9rem;
+    line-height: 1.2;
+}
+
+.experience_developer{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.experience_text{
+    display: flex;
+    padding-bottom: 60px;
+}
+.experience_text p{
+    font-weight: 400;
+    max-width: 40ch;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: rgb(88, 88, 88);
+}
+
+.experience_detail{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu_developer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 10px;
+}
+.menu_developer li{
+    background-color:white;
+    padding: 3px 8px;
+    font-size: .95rem;
+    border-radius: 4px;
+}
+
+
+
+.box_projetos{
+    position: relative;
+    background-color: #f3f2f2;
+    display: flex;
+    padding: 20px 20px 30px 20px;
+    gap: 20px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.box_projetos::before{
+    display: block;
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 20px;
+    background: linear-gradient(#b6f829, #67dd0a);
+    left: -5px;
+}   
+
+@media (max-width: 800px){
+    .professional_experience{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 10px 20px 0 20;
+    }
+    .subtitulo{
+        word-break: keep-all;
+        text-transform: none;
+        color: black;
+        font-size: 3.5rem;
+        font-weight: 500;
+        text-align: start;
+    }
+
+    .experience_text p{
+        font-size: 1.25rem;
+        line-height: 1.3;
+    }
+
+    .number{
+        position: initial;
+        order: 1;
+        width: initial;
+        text-align: left;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 500px){
+    .box_projetos{
+        flex-direction: column;
+    }
+
+    .number{
+        padding-top: 0;
+    }
+    .box_projetos{
+        gap: 10px;
+        align-items: start;
+    }
+}
+
+

@@ -1,0 +1,215 @@
+.academic_box{
+    background-color: #141414;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.academic_education{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1250px;
+    width: 100%;
+    gap: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.academic_education::after{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url(../img/detalhe.svg) no-repeat center;
+    position: absolute;
+    bottom: -150px;
+    left: 20px;
+    
+  }
+
+.color{
+    max-width: 4ch;
+    color: #2221217c;
+}
+
+.academic{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.mestrado{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 60px;
+    gap: 10px;
+}
+
+.mestrado_text::before{
+    display: block;
+    position: absolute;
+    content: "";
+    background: linear-gradient(#b6f829, #67dd0a);
+    width: 6px;
+    height: 20px;
+    left: -20px;
+    top: 45px;
+}
+
+.mestrado_text{
+    position: relative;
+    width: 100%;
+    max-width: 180px;
+    height: 160px;
+    background-color: #2221217c;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    justify-content: space-between;
+}
+
+.mestrado_bold{
+    font-weight: 500;
+    color: white;
+}
+
+.mestrado_text >h4{
+    color: rgb(161, 160, 160);
+    font-weight: 300;
+    font-size: .95rem;
+}
+
+.mestrado_text >p{
+    color: white;
+    font-size: 1.12rem;
+    max-width: 18ch;
+    padding-bottom: 30px;
+    
+}
+
+.mestrado_span{
+    color: rgb(161, 160, 160);
+    font-size: 1.125rem;
+}
+
+.tecnologo >p{
+   margin-top: -5px;
+}
+
+
+
+.academic >p{
+    font-weight: 400;
+    max-width: 40ch;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: rgb(161, 160, 160);
+}
+
+.course{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.course_text{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: -2.1875rem;
+    font-weight: 300;
+    font-size: .95rem;
+    color: rgb(161, 160, 160);
+    padding-bottom: 10px;
+}
+
+.course_detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.course_detail >p{
+    font-size: 1.12rem;
+}
+
+.number_detail{
+    color: rgb(161, 160, 160);
+    font-size: 1.12rem;
+}
+
+.language{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.language_text{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: -2.1875rem;
+    font-weight: 300;
+    font-size: .95rem;
+    color: rgb(161, 160, 160);
+    padding-bottom: 10px;
+}
+
+.language_detail{
+    color: rgb(161, 160, 160);
+    font-size: 1.12rem;
+}
+
+.language >p{
+    font-size: 1.12rem;
+}
+
+@media (max-width: 927px){
+    .mestre >span{
+    margin-top: -20PX;
+    }
+}
+
+@media (max-width: 800px){
+    .academic_education{
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .course_text{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 25px;
+        margin-left: 0;
+        align-items: start;
+    }
+
+    .language_text{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 25px;
+        margin-left: 0;
+        align-items: start;
+    }
+
+    .color{
+        color: white;
+    }
+
+    .academic_box{
+        padding-top: 60px;
+    }
+
+    .academic_education{
+        gap: 40px;
+    }
+
+    .mestrado{
+        flex-wrap: wrap;
+    }
+}

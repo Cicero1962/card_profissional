@@ -1,0 +1,76 @@
+.developer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  max-width: 1250px;
+  margin: 0 auto;
+  background-color: white;
+  gap: 100px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+
+.developer h1{
+  position: relative;
+    max-width: 13ch;
+    font-size: 4.5rem;
+    line-height: 1.125;
+    margin-bottom: 30px;
+  }
+  .developer_h1::before{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url(../img/detalhe.svg) no-repeat center;
+    position: absolute;
+    top: -15px;
+    left: -40px;
+    z-index: 1;
+}
+  
+  
+
+.developer p {
+  font-size: 1.5rem;
+  padding-top: 20px;
+}
+
+@media (max-width: 1003px) {
+  .developer h1 {
+    font-size: 2.5rem;
+  }
+  .developer {
+    justify-items: center;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 800px) {
+  .developer h1 {
+    font-size: 2rem;
+  }
+  .developer {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .developer h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .developer p {
+    text-align: center;
+  }
+  .logo_main {
+    display: none;
+  }
+
+  .developer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}

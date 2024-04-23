@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family:  "Fira Sans", Arial, sans-serif;
+}
+
+body{
+    display: grid;
+    
+    
+}
+
+img{
+    max-width: 100%;
+    object-fit: contain;
+}
+
+
